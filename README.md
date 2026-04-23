@@ -62,12 +62,6 @@ A [Claude Code plugin](https://docs.anthropic.com/en/docs/claude-code/plugins) t
 
 Requires Node.js 18+ in your PATH for the MCP tools.
 
-## History
-
-This plugin combines two previously separate projects:
-- [pokemon-tcg-coach](https://github.com/dgallitelli/pokemon-tcg-coach) (archived)
-- [pokemon-vgc-skill](https://github.com/dgallitelli/pokemon-vgc-skill) (archived)
-
 ## License
 
 MIT
