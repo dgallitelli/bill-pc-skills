@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="200" height="280">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e"/>
+      <stop offset="50%" style="stop-color:#283593"/>
+      <stop offset="100%" style="stop-color:#1565c0"/>
+    </linearGradient>
+    <linearGradient id="swirlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#42a5f5;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#7c4dff;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="ballTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef5350"/>
+      <stop offset="100%" style="stop-color:#c62828"/>
+    </linearGradient>
+    <linearGradient id="ballBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#eeeeee"/>
+      <stop offset="100%" style="stop-color:#bdbdbd"/>
+    </linearGradient>
+    <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c853"/>
+      <stop offset="100%" style="stop-color:#00897b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Card shape -->
+  <rect x="5" y="5" width="190" height="270" rx="12" ry="12" fill="url(#cardBg)" filter="url(#shadow)"/>
+  <rect x="5" y="5" width="190" height="270" rx="12" ry="12" fill="none" stroke="#5c6bc0" stroke-width="2"/>
+
+  <!-- Inner border -->
+  <rect x="14" y="14" width="172" height="252" rx="8" ry="8" fill="none" stroke="#5c6bc0" stroke-width="1" opacity="0.5"/>
+
+  <!-- Decorative swirl patterns (evokes card back) -->
+  <ellipse cx="100" cy="130" rx="70" ry="100" fill="none" stroke="url(#swirlGrad)" stroke-width="30" opacity="0.4"/>
+  <ellipse cx="100" cy="130" rx="45" ry="65" fill="none" stroke="url(#swirlGrad)" stroke-width="20" opacity="0.3"/>
+
+  <!-- Corner decorations -->
+  <circle cx="35" cy="35" r="8" fill="#7c4dff" opacity="0.25"/>
+  <circle cx="165" cy="35" r="8" fill="#7c4dff" opacity="0.25"/>
+  <circle cx="35" cy="245" r="8" fill="#7c4dff" opacity="0.25"/>
+  <circle cx="165" cy="245" r="8" fill="#7c4dff" opacity="0.25"/>
+
+  <!-- Pokeball -->
+  <!-- Top half (red) -->
+  <path d="M 60 130 A 40 40 0 0 1 140 130 L 60 130 Z" fill="url(#ballTop)" filter="url(#glow)"/>
+  <!-- Bottom half (white) -->
+  <path d="M 60 130 A 40 40 0 0 0 140 130 L 60 130 Z" fill="url(#ballBottom)"/>
+  <!-- Center band -->
+  <line x1="58" y1="130" x2="142" y2="130" stroke="#424242" stroke-width="4"/>
+  <!-- Center button -->
+  <circle cx="100" cy="130" r="14" fill="#424242"/>
+  <circle cx="100" cy="130" r="10" fill="#fafafa" stroke="#424242" stroke-width="2"/>
+  <circle cx="100" cy="130" r="5" fill="#e0e0e0"/>
+
+  <!-- "TCG COACH" text -->
+  <text x="100" y="205" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="18" fill="#ffd740" letter-spacing="2">TCG COACH</text>
+
+  <!-- Subtle Pokemon text -->
+  <text x="100" y="60" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="12" fill="#90caf9" opacity="0.7" letter-spacing="4">POKEMON</text>
+
+  <!-- Star decorations near text -->
+  <polygon points="55,218 57,224 63,224 58,228 60,234 55,230 50,234 52,228 47,224 53,224" fill="#ffd740" opacity="0.5" transform="scale(0.6) translate(30,145)"/>
+  <polygon points="55,218 57,224 63,224 58,228 60,234 55,230 50,234 52,228 47,224 53,224" fill="#ffd740" opacity="0.5" transform="scale(0.6) translate(195,145)"/>
+
+  <!-- Code badge </> in bottom-right corner -->
+  <g transform="translate(155, 235)">
+    <rect x="-18" y="-14" width="36" height="28" rx="6" ry="6" fill="url(#badgeBg)" filter="url(#shadow)"/>
+    <text x="0" y="5" text-anchor="middle" font-family="'Courier New', monospace" font-weight="bold" font-size="14" fill="#ffffff">&lt;/&gt;</text>
+  </g>
+</svg>
