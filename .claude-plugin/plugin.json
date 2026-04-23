@@ -1,0 +1,9 @@
+{
+  "name": "bill-pc-skills",
+  "description": "Your Pokemon coaching toolkit — competitive VGC teambuilding and TCG deckbuilding, powered by Bill's PC.",
+  "author": { "name": "dgallitelli" },
+  "homepage": "https://github.com/dgallitelli/bill-pc-skills",
+  "license": "MIT",
+  "keywords": ["pokemon", "tcg", "vgc", "coaching", "deckbuilding", "teambuilding", "mcp"],
+  "mcpServers": "./.mcp.json"
+}

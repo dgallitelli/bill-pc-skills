@@ -1,0 +1,9 @@
+{
+  "name": "bill-pc-skills",
+  "private": true,
+  "scripts": {
+    "build": "cd mcp-servers/pokemon-tcg-coach && npm run bundle",
+    "test": "cd mcp-servers/pokemon-tcg-coach && npm test",
+    "typecheck": "cd mcp-servers/pokemon-tcg-coach && npx tsc --noEmit"
+  }
+}

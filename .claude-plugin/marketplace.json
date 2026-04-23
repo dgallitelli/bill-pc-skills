@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dgallitelli",
+  "description": "Pokemon coaching skills by dgallitelli, powered by Bill's PC.",
+  "owner": { "name": "dgallitelli" },
+  "plugins": [
+    {
+      "name": "bill-pc-skills",
+      "source": "./",
+      "description": "Your Pokemon coaching toolkit — competitive VGC teambuilding and TCG deckbuilding",
+      "version": "1.0.0",
+      "author": { "name": "dgallitelli" },
+      "homepage": "https://github.com/dgallitelli/bill-pc-skills",
+      "keywords": ["pokemon", "tcg", "vgc", "coaching", "deckbuilding", "teambuilding"],
+      "tags": ["pokemon", "tcg", "vgc", "coaching"],
+      "category": "productivity",
+      "skills": ["./skills/pokemon-tcg-coach", "./skills/pokemon-vgc-coach"]
+    }
+  ]
+}

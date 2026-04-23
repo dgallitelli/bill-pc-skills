@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "pokemon-tcg-coach": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-servers/pokemon-tcg-coach/dist/bundle.js"],
+      "env": {
+        "COLLECTION_DATA_DIR": "${CLAUDE_PLUGIN_DATA}/collection"
+      }
+    },
+    "pokemon-vgc-calc": {
+      "command": "npx",
+      "args": ["pokemon-vgc-calc-mcp"],
+      "autoApprove": ["calculateDamage"]
+    },
+    "pokemon-paste": {
+      "command": "npx",
+      "args": ["pokemon-paste-mcp"],
+      "autoApprove": ["create_pokepaste"]
+    }
+  }
+}

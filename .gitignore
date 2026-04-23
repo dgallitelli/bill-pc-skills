@@ -1,0 +1,9 @@
+node_modules/
+*.tsbuildinfo
+.env
+collection/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
