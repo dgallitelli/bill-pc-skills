@@ -1,0 +1,23 @@
+{
+  "name": "pokemon-tcg-coach-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Pokemon TCG card search and collection management",
+  "type": "module",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "bundle": "esbuild src/index.ts --bundle --platform=node --format=esm --target=node18 --outfile=dist/bundle.js",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0"
+  }
+}
