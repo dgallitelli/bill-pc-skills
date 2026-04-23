@@ -2,6 +2,7 @@ node_modules/
 *.tsbuildinfo
 .env
 collection/
+docs/superpowers/
 .DS_Store
 Thumbs.db
 .vscode/
