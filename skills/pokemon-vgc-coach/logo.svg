@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#1a1040"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="50%" stop-color="#f5c518"/>
+      <stop offset="100%" stop-color="#ff8c00"/>
+    </linearGradient>
+    <linearGradient id="goldGradVert" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#f5c518"/>
+    </linearGradient>
+    <linearGradient id="darkGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#8b6508"/>
+    </linearGradient>
+    <linearGradient id="topHalfGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a30a"/>
+      <stop offset="100%" stop-color="#8b6508"/>
+    </linearGradient>
+    <linearGradient id="bottomHalfGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#f5c518"/>
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f5c518" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#f5c518" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f5c518" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="innerGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffe066" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffe066" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="roundClip">
+      <rect x="0" y="0" width="256" height="256" rx="32" ry="32"/>
+    </clipPath>
+    <!-- Clip for top half of Pokeball -->
+    <clipPath id="topHalf">
+      <rect x="38" y="30" width="180" height="88"/>
+    </clipPath>
+    <!-- Clip for bottom half of Pokeball -->
+    <clipPath id="bottomHalf">
+      <rect x="38" y="122" width="180" height="88"/>
+    </clipPath>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#f5c518" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="buttonGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#ffe066" flood-opacity="0.8" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#roundClip)">
+    <!-- Background -->
+    <rect width="256" height="256" fill="url(#bgGrad)"/>
+
+    <!-- Subtle grid lines -->
+    <line x1="128" y1="40" x2="128" y2="216" stroke="#1e1650" stroke-width="0.5" opacity="0.5"/>
+    <line x1="40" y1="118" x2="216" y2="118" stroke="#1e1650" stroke-width="0.5" opacity="0.5"/>
+    <line x1="64" y1="40" x2="64" y2="216" stroke="#161240" stroke-width="0.3" opacity="0.3"/>
+    <line x1="192" y1="40" x2="192" y2="216" stroke="#161240" stroke-width="0.3" opacity="0.3"/>
+
+    <!-- Large glow behind Pokeball -->
+    <circle cx="128" cy="118" r="100" fill="url(#glowGrad)"/>
+
+    <!-- Outer radiance ring -->
+    <circle cx="128" cy="118" r="80" fill="none" stroke="#f5c518" stroke-width="0.5" opacity="0.15"/>
+    <circle cx="128" cy="118" r="90" fill="none" stroke="#f5c518" stroke-width="0.3" opacity="0.08"/>
+
+    <!-- === POKEBALL === -->
+
+    <!-- Top half (gold filled) -->
+    <g clip-path="url(#topHalf)">
+      <circle cx="128" cy="118" r="68" fill="url(#topHalfGrad)" stroke="none"/>
+    </g>
+
+    <!-- Bottom half (dark gold / outlined) -->
+    <g clip-path="url(#bottomHalf)">
+      <circle cx="128" cy="118" r="68" fill="url(#bottomHalfGrad)" stroke="none"/>
+    </g>
+
+    <!-- Full outer ring stroke -->
+    <circle cx="128" cy="118" r="68" fill="none" stroke="#ff8c00" stroke-width="3.5"/>
+    <!-- Bright highlight on outer ring -->
+    <circle cx="128" cy="118" r="68" fill="none" stroke="#ffe066" stroke-width="1" opacity="0.4"/>
+
+    <!-- Horizontal band (center line) -->
+    <rect x="58" y="112" width="140" height="12" fill="#0a0e27"/>
+    <rect x="58" y="112" width="140" height="12" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Band inner lines for depth -->
+    <line x1="60" y1="115" x2="196" y2="115" stroke="#f5c518" stroke-width="0.5" opacity="0.3"/>
+    <line x1="60" y1="121" x2="196" y2="121" stroke="#f5c518" stroke-width="0.5" opacity="0.3"/>
+
+    <!-- Center button - outer ring -->
+    <circle cx="128" cy="118" r="18" fill="#0a0e27" stroke="url(#goldGrad)" stroke-width="3" filter="url(#buttonGlow)"/>
+    <!-- Center button - inner bright circle -->
+    <circle cx="128" cy="118" r="10" fill="#0a0e27" stroke="#f5c518" stroke-width="2"/>
+    <!-- Center button - core glow dot -->
+    <circle cx="128" cy="118" r="5" fill="url(#innerGlow)"/>
+    <circle cx="128" cy="118" r="3" fill="#ffe066" opacity="0.9"/>
+    <!-- Tiny specular highlight on button -->
+    <circle cx="126" cy="116" r="1.5" fill="#fff" opacity="0.5"/>
+
+    <!-- Specular highlight on top half (gloss) -->
+    <ellipse cx="112" cy="88" rx="30" ry="18" fill="#fff" opacity="0.08"/>
+
+    <!-- Subtle shine arc on top-left -->
+    <path d="M 82 78 A 68 68 0 0 1 150 55" fill="none" stroke="#fff" stroke-width="2" opacity="0.12" stroke-linecap="round"/>
+
+    <!-- Corner accent bracket marks -->
+    <path d="M 20 40 L 20 20 L 40 20" fill="none" stroke="#f5c518" stroke-width="2" opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 236 40 L 236 20 L 216 20" fill="none" stroke="#f5c518" stroke-width="2" opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 20 216 L 20 236 L 40 236" fill="none" stroke="#f5c518" stroke-width="2" opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 236 216 L 236 236 L 216 236" fill="none" stroke="#f5c518" stroke-width="2" opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- "VGC" text at bottom -->
+    <text x="128" y="238" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="18" letter-spacing="6" fill="#f5c518" opacity="0.7">VGC</text>
+  </g>
+</svg>

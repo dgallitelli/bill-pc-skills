@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.svg" alt="Bill's PC Skills" width="160"/>
+  <img src="logo.png" alt="Bill's PC Skills" width="320"/>
 </p>
 
 <h1 align="center">Bill's PC Skills</h1>
