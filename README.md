@@ -4,7 +4,16 @@
 
 <h1 align="center">Bill's PC Skills</h1>
 
-<p align="center">Your Pokemon coaching toolkit — competitive VGC teambuilding and TCG deckbuilding, powered by Bill's PC.</p>
+<p align="center">
+  <em>Your Pokemon coaching toolkit — competitive VGC teambuilding and TCG deckbuilding, powered by Bill's PC.</em>
+</p>
+
+<p align="center">
+  <a href="skills/pokemon-tcg-coach">Pokemon TCG Coach</a> ·
+  <a href="skills/pokemon-vgc-coach">Pokemon VGC Coach</a>
+</p>
+
+---
 
 A [Claude Code plugin](https://docs.anthropic.com/en/docs/claude-code/plugins) that gives your AI agent two specialized Pokemon coaching skills. Install it from the marketplace and get expert-level guidance for both the Pokemon Trading Card Game and competitive VGC doubles battles — complete with MCP tools for card search, collection management, damage calculations, and team export. Works with Claude Code and any AI agent that supports skills and MCP servers.
 
