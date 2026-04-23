@@ -3,6 +3,7 @@ node_modules/
 .env
 collection/
 docs/superpowers/
+ground-truths/
 .DS_Store
 Thumbs.db
 .vscode/
