@@ -6,13 +6,17 @@ Multi-skill Claude Code plugin for Pokemon coaching. Contains:
 - **pokemon-tcg-coach** — TCG rules, deckbuilding, card search, collection management
 - **pokemon-vgc-coach** — VGC teambuilding, metagame analysis, damage calcs, team export
 
+See also:
+- `README.md` — User-facing overview, example prompts, install instructions
+- `TECHNICAL.md` — Plugin architecture, MCP tools reference, path variables, data storage
+
 ## Structure
 
 - `skills/` — One subdirectory per skill, each with SKILL.md + references/
 - `mcp-servers/` — Bundled MCP server source code (TCG card search & collection)
 - `.claude-plugin/` — Plugin and marketplace metadata
 - `.mcp.json` — MCP server declarations (all 3 servers)
-- `ground-truths/` — Test scenarios for validating skill quality
+- `ground-truths/` — Test scenarios for validating skill quality (gitignored)
 
 ## Development
 

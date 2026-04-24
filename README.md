@@ -15,25 +15,29 @@
 
 ---
 
-A [Claude Code plugin](https://docs.anthropic.com/en/docs/claude-code/plugins) that gives your AI agent two specialized Pokemon coaching skills. Install it from the marketplace and get expert-level guidance for both the Pokemon Trading Card Game and competitive VGC doubles battles — complete with MCP tools for card search, collection management, damage calculations, and team export. Works with Claude Code and any AI agent that supports skills and MCP servers.
+A [Claude Code plugin](https://docs.anthropic.com/en/docs/claude-code/plugins) that turns your AI agent into a Pokemon coach. Install it and start asking questions — whether you're building your first deck, prepping for a tournament, or tracking your card collection.
 
-## What's Inside
+## Pokemon TCG Coach
 
-### Pokemon TCG Coach
-- Rules & legality — answer rules questions, check card/set legality by format
-- Deckbuilding — help build competitive decks with proper ratios and strategy
-- Meta analysis — current top archetypes with strengths, weaknesses, and matchups
-- Card search — find cards by name, type, set, HP, regulation mark
-- Collection tracking — import your cards, save decks, track what you own
-- Purchase advice — what to buy to complete a deck, singles vs sealed guidance
+Ask about rules, get help building a deck, search for cards, or manage your collection. The coach adapts to your level — from your first theme deck to optimizing a tournament list.
 
-### Pokemon VGC Coach
-- Teambuilding — 5-step framework from core idea to final details
-- Metagame analysis — live usage stats and top sets from Pikalytics
-- Damage calculations — inline calcs for EV benchmarks and KO ranges
-- Synergy library — 30+ documented mechanical combos
-- In-battle coaching — team preview, turn-by-turn theory, endgame calculation
-- Format-aware — Pokemon Champions, Scarlet/Violet regulations
+Try asking:
+- *"How does evolution work in Pokemon TCG?"*
+- *"Help me build a competitive deck around Charizard ex"*
+- *"What are the best decks in Standard right now?"*
+- *"I opened these packs — add the cards to my collection"*
+- *"What cards am I missing to complete this deck?"*
+
+## Pokemon VGC Coach
+
+Get help teambuilding for competitive doubles, analyze the metagame, run damage calculations, and improve your in-battle decision making. Built on the teambuilding philosophy of top players like WolfeyVGC.
+
+Try asking:
+- *"Build me a team around Mega Emboar"*
+- *"What's good in the Champions format right now?"*
+- *"Give me an EV spread for Archaludon that survives Close Combat"*
+- *"Explain how Shed Tail into Nasty Plot Froslass works"*
+- *"What should I lead against a Trick Room team?"*
 
 ## Install
 
@@ -42,25 +46,11 @@ A [Claude Code plugin](https://docs.anthropic.com/en/docs/claude-code/plugins) t
 /plugin install bill-pc-skills@dgallitelli
 ```
 
-## MCP Tools
+Requires Node.js 18+ in your PATH.
 
-| Tool | Skill | Purpose |
-|------|-------|---------|
-| `card-search` | TCG | Search Pokemon TCG cards by name, set, type, regulation mark |
-| `collection-import` | TCG | Import PTCGL card list into collection |
-| `collection-view` | TCG | View card collection with filters |
-| `collection-remove` | TCG | Remove cards from collection |
-| `deck-save` | TCG | Save a PTCGL decklist |
-| `deck-list` | TCG | List all saved decks |
-| `deck-get` | TCG | Retrieve a saved deck |
-| `deck-delete` | TCG | Delete a saved deck |
-| `deck-diff` | TCG | Compare deck vs collection — what's missing? |
-| `calculateDamage` | VGC | Damage calculations for EV spreads and KO ranges |
-| `create_pokepaste` | VGC | Export teams to PokePaste for sharing |
+## Contributing
 
-## Prerequisites
-
-Requires Node.js 18+ in your PATH for the MCP tools.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and development instructions. For technical details on the plugin architecture and MCP tools, see [TECHNICAL.md](TECHNICAL.md).
 
 ## License
 
