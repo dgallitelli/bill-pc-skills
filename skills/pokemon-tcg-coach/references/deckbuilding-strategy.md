@@ -275,3 +275,143 @@ You may include exactly one Ace Spec card in your deck. The right choice depends
 
 - Staple trainers rotate slowly -- buying them as singles is almost always the right call
 - Check both TCGPlayer and local game stores for best prices on Pokemon singles
+
+---
+
+## 4. Advanced Deckbuilding Theory
+
+### Two-Layer Draw Architecture
+
+Every competitive deck needs draw support on two independent layers:
+
+**Layer 1 — Supporters (the floor):** Lillie's Termination, Professor's Research, Iono. Run 8-10 total draw Supporters for ~80-88% probability of having one in your opening 8 cards. This is the minimum each turn.
+
+**Layer 2 — Pokemon abilities (the ceiling):** Drakloak (Recon), Lunatone/Solrock (Luna Cycle), Gholdengo (Coin Bonus), Dudunsparce (Run Away Draw), Kirlia (Refinement). These provide repeatable draw that doesn't consume the Supporter slot.
+
+**The ceiling determines how much a deck can accomplish beyond the single-Supporter minimum.** Decks with strong Pokemon-based draw can use their Supporter slot for Boss's Orders or Crispin while maintaining card flow. Decks without it stall whenever they need a non-draw Supporter.
+
+**Search redundancy across both layers should total 8-12 cards** that can find other cards (Ultra Ball, Buddy-Buddy, Pokegear, type-specific search). This prevents "dead draws" — hands with no actionable cards.
+
+Use Limitless TCG's DrawCalc (limitlesstcg.com/tools/drawcalc) or pokemoncard.io's sample hand simulator to test whether your draw architecture achieves acceptable consistency thresholds.
+
+### The Supporter Tempo Bottleneck
+
+You can only play one Supporter per turn. This is the core resource tension in competitive TCG: every Supporter use is an opportunity cost against every other Supporter.
+
+| You need to... | Supporter cost |
+|----------------|---------------|
+| Draw cards | Lillie's Termination |
+| Search energy | Crispin |
+| Gust a target | Boss's Orders |
+| Disrupt opponent | Judge |
+
+Pokemon abilities that replicate Supporter effects (Meowth EX searching a Supporter, Drakloak providing draw) break this bottleneck by letting you accomplish two tasks in one turn.
+
+### Deck Thinning and Sequencing
+
+**Deck thinning is real card advantage.** Cards like Trekking Shoes and Gutsy Pickaxe that cycle themselves effectively reduce your deck size, improving the probability of drawing impactful cards on future turns. Ultra Ball also thins (discard 2 to search 1).
+
+**Play order within a turn matters.** Use search effects (Ultra Ball) before draw effects (Supporter) to thin the deck first. Use abilities that look at the top of your deck (Drakloak's Recon) after shuffling effects, not before. Bench Pokemon with come-into-play abilities (Meowth EX) early to maximize triggers.
+
+### Probability Thinking ("Outs")
+
+An "out" is any card remaining in your deck that advances your game state. Running 4 copies of a card gives roughly 40% chance of seeing it in your opening 7-card hand. Running 8 combined search/draw cards that find it pushes effective probability much higher.
+
+**Mulligan probability is a deckbuilding constraint.** Running fewer Basic Pokemon increases the chance of revealing cards through forced mulligans. Top decks run 8-14 Basic Pokemon to keep mulligan probability under 5%.
+
+---
+
+## 5. Archetype Classification
+
+### Strategic Patterns
+
+While Pokemon TCG archetypes are named by their primary Pokemon (Gardevoir ex, Dragapult ex), the underlying strategic patterns recur across formats:
+
+| Pattern | Description | Coaching Advice |
+|---------|-------------|-----------------|
+| **Direct Aggression** | Take KOs as fast as possible; stream attackers | "Every turn without an attack is a turn you fall behind." |
+| **Spread** | Accumulate damage across multiple targets, then take multi-KOs in burst turns | "Patience is your weapon. Let damage accumulate, then close 2-3 prizes in one turn." |
+| **Control** | Cut off opponent's avenues to victory: energy denial, item lock, hand disruption | "Your goal isn't to attack fast; it's to make your opponent unable to attack." |
+| **Mill** | Win by decking out the opponent | "Count your opponent's deck constantly." |
+| **Engine Combo** | Rely on specific card combinations to generate overwhelming advantage | Setup-dependent but unstoppable once assembled. |
+
+### Recurring Engine Patterns
+
+| Pattern | Examples |
+|---------|---------|
+| Ability-based draw | Drakloak, Lunatone/Solrock, Gholdengo, Dudunsparce |
+| Energy acceleration | Gardevoir (discard), Charizard (Infernal Reign), Grimmsnarl (Punk Up) |
+| Search engines | Pidgeot ex (Quick Search), Miraidon (Tandem Unit) |
+| Discard-fueled scaling | Raging Bolt (energy), Ethan's Typhlosion (supporters), Gholdengo (energy from hand) |
+| Passive chip damage | Froslass (Freezing Shroud), Risky Ruins stadium |
+| Damage movement | Munkidori, Mankey Dory, Oranguru, Dusknoir |
+
+---
+
+## 6. Counter-Meta Theory
+
+### The Self-Correcting Metagame
+
+When one deck dominates, counter-strategies emerge. Being the most-played deck makes you the most-targeted deck. This is why Dragapult Dusknoir (the most-played deck in Standard) has declining win rates — the meta has adapted to beat it.
+
+### Reading the Metagame
+
+Use Limitless TCG (limitlesstcg.com/decks) as the primary metagame data source:
+
+1. **Filter by tournament tier and recency.** Regional/International/Worlds data reflects the most competitive metagame. League Challenge data is noisier.
+2. **Compare meta share vs win rate.** High share + low WR = "popular but solved." Low share + high WR = underplayed/breakout.
+3. **Read matchup tables.** A deck's overall win rate matters less than its spread against the top 5-8 meta decks.
+4. **Watch for the "Week 1" effect.** After a new set drops, the meta features experimentation and unoptimized lists. It settles after 2-3 major events.
+
+### No Sideboard — A Defining Feature
+
+Unlike other TCGs, Pokemon TCG has no sideboard. The 60 cards registered at the start of a tournament are the only cards for every match. This means:
+- Every tech slot competes with consistency cards
+- Metagame prediction is more consequential
+- Tech choices must be maindecked, creating a sharper consistency-vs-coverage tradeoff
+
+### Evaluating Deck Viability
+
+A deck is structurally good (not just winning by surprise) if it:
+1. Maintains positive win rate (>50%) after 500+ recorded matches
+2. Has favorable matchups against at least 2 of the top 5 most-played decks
+3. Doesn't have any extreme unfavorable matchup (>65%) against a high-share deck
+4. Has been piloted to day 2 by multiple different players
+5. Survives a meta shift where opponents know to expect it
+
+---
+
+## 7. Testing Methodology
+
+### Testing Stages
+
+| Stage | What to Do | Purpose |
+|-------|-----------|---------|
+| 1. Goldfishing | Play alone; no opponent | Identify consistency issues — "Your deck will never win if it can't function" |
+| 2. Digital testing | PTCGL or simulators | Rapid iteration without physical card changes |
+| 3. Tracked playtesting | Play against others; track 4 questions per game | Identify systemic patterns |
+| 4. Focused matchup testing | Test against top 8 meta decks from Limitless | Validate matchup spread |
+
+### The Four Questions (After Every Game)
+
+1. Which needed cards didn't appear?
+2. Which cards appeared too frequently?
+3. Did my attackers win the prize trade?
+4. What cards did I wish were included?
+
+### The 10-Game Rule
+
+"If you play ten games and you still haven't used a card — you should probably drop it." Adjust counts before cutting concepts (4→3, or 2→3). Only change the strategy when the core mechanism is fundamentally flawed against the expected meta.
+
+### Common Coaching Anti-Patterns
+
+| Anti-Pattern | What Happens | Fix |
+|-------------|-------------|-----|
+| No core mechanism | Deck is a collection of good cards with no central engine | Ask: "What is this deck's one interaction that defines every game?" |
+| Too few draw supporters | 2-3 copies instead of 8-10 total draw/search supporters | Run 4 Lillie's Termination + Pokemon-based draw engine |
+| No Pokemon-based draw | Relying only on Supporters stalls whenever you need Boss/Crispin | Add Drakloak line, Lunatone/Solrock, or equivalent |
+| Ignoring the prize trade | Not counting KOs needed to win | Always count: "How many KOs does each side need?" |
+| Over-teching | 10 different 1-of techs, only 6 Supporters | Every tech replaces a consistency card. Prioritize consistency. |
+| Under-testing / results-oriented | Changing deck after one bad loss | Use the 10-game rule. One game is not a sample. |
+| Multi-type energy scatter | 3-4 energy types hoping for flexibility | Start mono-type + one splash color maximum |
+| Cool cards over consistent cards | Flashy 1-ofs that rarely appear | 4-of cards you need every game; 1-of only for targeted tech |

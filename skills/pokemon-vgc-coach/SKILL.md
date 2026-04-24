@@ -209,6 +209,23 @@ Now finalize:
 - **Defensive Pokemon**: Max HP, then split between defenses
 - **Advanced**: Train to hit specific benchmarks (outspeed X, survive Y's attack, KO Z)
 
+**The Benchmark Method (for intermediate+ players)**:
+
+Use this 3-step process instead of defaulting to 252/252/4:
+
+1. **Speed tier first** — "The very first thing I do is decide on my speed stat." Identify which Pokemon you need to outspeed, then calculate minimum Speed EVs + Nature. Speed creep (4-12 extra EVs) beats opponents at the same tier.
+2. **Non-negotiable benchmarks** — Identify attacks your Pokemon MUST survive (defensive) or KOs it MUST guarantee (offensive). Use a damage calculator to find minimum EV investment. The 15/16 rule: building to survive 15 of 16 damage rolls (93.75%) is often sufficient to save EVs.
+3. **Optimize remaining EVs** — Allocate leftover EVs using these principles:
+   - HP is the most efficient general bulk investment (improves both physical and special bulk)
+   - Odd HP numbers are superior (Life Orb recoil rounds down, weather/status chip rounds down)
+   - Diminishing returns: "You get the most value for a stat point the LOWER a stat is"
+   - Nature boosts the highest post-EV stat for maximum value
+   - Invest in 3 or 5 stats, never 2, 4, or 6 (avoids wasting EVs)
+
+**When 252/252/4 is correct**: Fast frail Pokemon (base speed 96+), when starting a new team, when you haven't played enough to know benchmarks. Always start simple — complexity comes from testing.
+
+**When custom spreads fail**: The targeted threat never appears, you forget your calcs mid-battle, chip damage invalidates precise survival thresholds, or mirror matchups suffer from Speed sacrifice.
+
 ### Key Double Battle Moves
 - **Protect**: Blocks all moves for one turn. Essential on almost every Pokemon.
 - **Fake Out**: +3 priority, flinches target. Only works on the first turn after switching in.
@@ -304,6 +321,17 @@ Team Preview is 90 seconds to decide which 4 of your 6 Pokemon to bring and whic
 3. **Choose your win condition**: How does your team beat this specific opponent?
 4. **Pick leads that execute the plan**: Your leads should either start your win condition or disrupt theirs.
 5. **Back Pokemon should clean up**: The 2 in the back should handle what the leads can't.
+
+**Aaron Zheng's 3-Step Elimination Method** (VGCGuide):
+1. **Analyze opponent's team first** — Identify synergistic combos, assess speed profile, spot "1v4 potential" Pokemon that could sweep your whole team solo
+2. **Select 4 via elimination** — Work backwards: exclude Pokemon with poor offensive typing into their team, unfavorable defensive matchups, lack of utility, or speed incompatibility. Include primary attackers, answers to main threats, coverage for sweep-potential threats
+3. **Select leads** — Consider opponent's likely leads, whether your synergies counter them, lead purpose (speed setup vs offensive pressure vs defensive positioning), and how back-two support the leads
+
+**Aaron Traylor's Pressure Narrative** (VGCGuide): Map pressure relationships — which of YOUR Pokemon most threaten THEM, and vice versa. Plan backwards from endgame: "If you remove one of their Pokemon, does that remove pressure on one of yours?" Identify Pokemon you cannot afford to lose early.
+
+**90-second opponent analysis** — Evaluate 8 components: (1) primary offensive threats, (2) speed control methods, (3) pace/playstyle, (4) speed distribution relative to yours, (5) type coverage gaps, (6) Pokemon synergies and likely leads, (7) support-to-offense ratio, (8) item distribution.
+
+**Bo3 adaptation**: Game 1 uses standard methodology. Games 2-3 incorporate revealed information — analyze lead matchup success, identify underperforming Pokemon, track revealed movesets, conserve information by avoiding unnecessary reveals. Multi-mode teams exploit this by alternating modes across games.
 
 **Common mistakes**: Bringing the same 4 every game (inflexible), leading with your win condition unprotected, leaving your only answer to a threat in the back.
 
@@ -440,6 +468,32 @@ Terastallization (Gen 9 / Scarlet & Violet) changes a Pokemon's type, affecting 
 - **Aroma Veil protects allies from Taunt, Encore, and Disable** — A Pokemon with Aroma Veil prevents itself and all allies from being affected by Taunt, Torment, Encore, Disable, and Cursed Body. On teams that rely on support moves (Tailwind, Trick Room, Protect), Aroma Veil is a hidden anti-disruption tool.
 - **Bolt Beak and Fishious Rend double in power when the target just switched in** — These moves (Dracozolt and Dracovish's signatures) are normally 85 BP, but hit at 170 BP either if the user moves first OR if the target switched in that turn. This applies even if the user is slower — a freshly switched-in Pokemon will always take doubled damage. Punishes predictable switches.
 - **Unseen Fist lets contact moves bypass Protect** — Urshifu's ability causes all contact moves to ignore Protect, King's Shield, Spiky Shield, etc. This is one of the very few ways to force damage through Protect in a single turn. Players who have never faced it will try to Protect through an Urshifu attack and get hit anyway.
+
+## Archetype Classification
+
+### Playstyle Tiers
+
+| Playstyle | Traits | Game Length | Tournament Viability |
+|-----------|--------|-------------|---------------------|
+| **Hyper Offense** | Fast, frail, all-out attack | ~8 turns | Better in Bo1, early-season metas |
+| **Bulky Offense** | Balanced power and bulk | 8-12 turns | Dominates tournament results including Worlds |
+| **Hyper Defense** | Recovery, setup, disruption | 10-15+ turns | Rarely succeeds due to tournament timer |
+
+Bulky offense is the near-universal consensus for optimal tournament play.
+
+### Mode Theory
+
+A "mode" is a distinct way your team can play (e.g., Tailwind mode vs Trick Room mode). Multi-mode teams shine in Bo3: show Mode 1 in Game 1, force adjustment, switch to Mode 2 in Game 2.
+
+**Warning signs of poor mode integration**: restricts Team Preview options, forces certain Pokemon to always pair, reduces lead/back flexibility, telegraphs strategy to opponents.
+
+### Team Health Indicators
+
+A team is good when (VGCGuide):
+1. **Enjoyable** — Fun to play even during losses
+2. **Proactive** — Your Pokemon force responses from the opponent, not the other way around
+3. **Understood weaknesses** — Bad matchups are "hard but winnable," not auto-losses
+4. **Consistent** — Works even when opponents know your strategy
 
 ## VGC Jargon Glossary
 

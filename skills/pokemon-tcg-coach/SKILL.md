@@ -120,7 +120,7 @@ Read these files on demand. Do NOT load them all upfront.
 |------|-------------|
 | `${CLAUDE_SKILL_DIR}/references/rules.md` | Specific timing questions, ability resolution, damage calculation, special conditions, between-turn checks |
 | `${CLAUDE_SKILL_DIR}/references/format-legality.md` | Card/set legality, regulation marks, banned list, rotation history, set abbreviations |
-| `${CLAUDE_SKILL_DIR}/references/deckbuilding-strategy.md` | Deckbuilding framework, archetype breakdowns, purchasing strategy, budget recommendations |
+| `${CLAUDE_SKILL_DIR}/references/deckbuilding-strategy.md` | Deckbuilding framework, archetype breakdowns, purchasing strategy, advanced draw theory, counter-meta analysis, testing methodology, metagame reading |
 
 ## MCP Tools
 
@@ -165,6 +165,24 @@ All tools are provided by the `pokemon-tcg-coach` MCP server.
 3. For each: name the key cards, general strategy, and matchup profile
 4. Ask if they want a full list for any archetype
 5. Tailor recommendations to their collection if known (use `collection-view`)
+
+### "How do I read the metagame?"
+
+1. Explain the primary data source: Limitless TCG (limitlesstcg.com/decks) for meta share, win rates, and matchup tables
+2. Read `${CLAUDE_SKILL_DIR}/references/deckbuilding-strategy.md` Section 6 (Counter-Meta Theory) for the analysis framework
+3. Show how to interpret meta share vs win rate: High share + low WR = popular but solved. Low share + high WR = potential breakout.
+4. Help the user evaluate their deck's positioning: count favorable vs unfavorable matchups weighted by meta share
+5. Discuss the "Week 1 vs settled meta" distinction if a new set recently dropped
+6. Recommend Limitless TCG DrawCalc for testing opening hand consistency
+
+### "Why do I keep losing?"
+
+1. Ask for specifics: which decks are they losing to? Same archetype or varied?
+2. Read `${CLAUDE_SKILL_DIR}/references/deckbuilding-strategy.md` Sections 4-7 for diagnostic frameworks
+3. Check: Is it a consistency problem (bricking, dead draws) or a matchup problem (losing to specific decks)?
+4. For consistency: evaluate draw architecture (two-layer model), search redundancy, energy count vs acceleration
+5. For matchups: check the prize trade math, evaluate tech slots, consider if the core mechanism is viable against the current meta
+6. For both: recommend the 4-question tracking and 10-game rule from Section 7
 
 ### "Import my deck"
 

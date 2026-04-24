@@ -56,18 +56,34 @@ Ask the user to note after each game:
 
 ## Phase 3: Advanced Optimization
 
-### EV Spread Optimization
-Once the user knows which Pokemon they're facing, optimize spreads:
+### EV Spread Optimization (The Benchmark Method)
 
-1. **Identify key benchmarks**:
-   - "I need to outspeed Charizard" → Calculate minimum Speed EVs needed
-   - "I need to survive Dragonite's Draco Meteor" → Calculate minimum HP/SpD EVs
-   - "I need to KO Incineroar with Close Combat" → Calculate minimum Atk EVs
+Once the team is tested and benchmarks are identified through gameplay:
 
-2. **Allocate remaining EVs efficiently**:
-   - After hitting benchmarks, put leftover EVs where they matter most
-   - HP investment is generally the most efficient for bulk
-   - Odd HP numbers are slightly better (reduces Life Orb recoil and weather/status chip damage)
+1. **Speed tier first**:
+   - Identify specific Pokemon to outspeed (check Pikalytics for common Speed investments)
+   - Calculate minimum Speed EVs + Nature to reach the target stat
+   - Consider speed creep: invest 4-12 extra EVs to beat opponents at the same tier
+   - For Trick Room attackers: 0 Speed EVs, 0 Speed IV, -Speed nature
+
+2. **Defensive benchmarks**:
+   - "I need to survive [specific attack from specific Pokemon]"
+   - Use damage calculator to find minimum HP + Def/SpD investment
+   - The 15/16 rule: surviving 15 of 16 damage rolls (93.75%) is often sufficient
+   - Account for chip damage sources (Fake Out, weather, recoil, Life Orb chip)
+
+3. **Offensive benchmarks**:
+   - "I need to guarantee KO on [specific Pokemon with specific spread]"
+   - Calculate minimum Atk/SpA investment for OHKO or 2HKO
+   - Consider: does the benchmark change with Helping Hand, weather, or terrain?
+
+4. **Leftover EV allocation** (in priority order):
+   - HP is the most efficient general bulk investment (improves both sides)
+   - Odd HP numbers are superior (Life Orb recoil, weather chip rounds down)
+   - Defense vs Special Defense: invest in whichever covers more meta threats
+   - Nature should boost your highest post-EV stat for maximum value
+
+**Tools**: Pokemon Showdown Damage Calculator (calc.pokemonshowdown.com), Victory Road Calculator (calc.victoryroad.es), Nimbasa City Post Calculator (Champions-specific)
 
 ### Lead Optimization
 Help the user develop a "lead sheet" — a reference for which leads to use against common teams:

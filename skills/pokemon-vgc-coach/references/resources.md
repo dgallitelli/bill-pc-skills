@@ -31,7 +31,22 @@
   - Synergy: https://www.vgcguide.com/synergy
   - Cores and Modes: https://www.vgcguide.com/cores-and-modes
   - Team Preview: https://www.vgcguide.com/team-preview
-  - How to Pull It All Together: https://vgcguide.com/how-to-pull-it-all-together
+  - Analyzing Opponents: https://www.vgcguide.com/analyzing-your-opponents-teams
+  - Game Plans: https://www.vgcguide.com/what-is-a-game-plan
+  - Pressure Theory: https://www.vgcguide.com/what-is-pressure
+  - EV Spreads (3-part series): https://www.vgcguide.com/eving-1
+  - Speed Control: https://www.vgcguide.com/speed-control
+  - Trick Room: https://www.vgcguide.com/trick-room
+  - Archetypes: https://www.vgcguide.com/archetypes
+  - Playstyle & Pace: https://www.vgcguide.com/team-playstyle-and-pace
+  - Consistency: https://www.vgcguide.com/consistency
+  - Bo1 vs Bo3: https://www.vgcguide.com/approaching-best-of-1-vs-best-of-3
+  - Predictions: https://www.vgcguide.com/predictions
+  - Island Pokemon: https://www.vgcguide.com/island-pokemon
+  - Accuracy vs Power: https://www.vgcguide.com/accuracy-vs-power
+  - Battle Analysis: https://www.vgcguide.com/how-to-analyze-a-battle
+  - Luck & Variance: https://www.vgcguide.com/competitive-pokemon-is-less-luck-than-you-think
+  - How to Pull It All Together: https://www.vgcguide.com/how-to-pull-it-all-together
 - **Written by**: Wolfe Glick (World Champion), Aaron Traylor, and others
 - **When to use**: Recommend to users learning fundamentals. Evergreen content.
 

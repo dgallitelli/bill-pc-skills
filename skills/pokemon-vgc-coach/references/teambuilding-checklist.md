@@ -47,6 +47,13 @@ Use this checklist when reviewing or building a team. Not every box needs to be 
 - [ ] Answers to common status moves (Sleep, Burns, Paralysis)
 - [ ] Can handle redirection (Follow Me / Rage Powder)
 
+## Anti-Pattern Check
+- [ ] **Island Pokemon test**: Can the opponent safely ignore any Pokemon on your team without consequence? If yes, that Pokemon needs offensive pressure or supportive utility, not just passive defense
+- [ ] **6th Pokemon Syndrome**: If the 6th slot is hard to fill, the problem is likely the first 5 — does the team have a clear thesis you can state in one sentence?
+- [ ] **Goodstuff audit**: If 4+ of your 6 Pokemon are top-10 usage, verify each one specifically addresses a core weakness rather than being added because it's popular
+- [ ] **Coverage vs threats**: Are you covering types or covering actual threats? "Good matchups" (favorable positions) matter more than "counters" (type advantages)
+- [ ] **Ladder vs tournament fit**: If building for Bo3 tournament, does the team have a defensive backbone? Surprise-only strategies underperform in Bo3
+
 ## Team Preview Flexibility
 - [ ] Multiple viable lead combinations (not just one "correct" lead)
 - [ ] Flexible bring-4 options against different team archetypes

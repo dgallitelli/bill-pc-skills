@@ -15,7 +15,7 @@ Every Pokemon TCG card printed since Sword & Shield base has a regulation mark (
 | E | Sword & Shield late | Brilliant Stars, Astral Radiance, Lost Origin, Silver Tempest, Crown Zenith | Rotated from Standard 2024 |
 | F | Scarlet & Violet early | Scarlet & Violet Base (SVI), Paldea Evolved (PAL), Obsidian Flames (OBF), 151 (MEW) | Rotated from Standard 2025 |
 | G | Scarlet & Violet mid | Paradox Rift (PAR), Paldean Fates (PAF), Temporal Forces (TEF), Twilight Masquerade (TWM), Shrouding Flames (SFA), Stellar Crown (SCR) | Currently legal in Standard |
-| H | Scarlet & Violet late / Next gen | Surging Sparks (SSP), Prismatic Evolutions (PRE), Journey Together (JTG) | Currently legal in Standard |
+| H | Scarlet & Violet late / Next gen | Surging Sparks (SSP), Prismatic Evolutions (PRE), Journey Together (JTG), Black Bolt (BLK), White Flare (WHT), Mega Evolution (MEG), Phantasmal Flames (PFL), Ascended Heroes (ASC), Perfect Order (POR) | Currently legal in Standard |
 
 ## Standard Format
 
@@ -96,6 +96,12 @@ Every Pokemon TCG card printed since Sword & Shield base has a regulation mark (
 | PRE | Prismatic Evolutions | H |
 | JTG | Journey Together | H |
 | SVE | Scarlet & Violet Energies | G/H |
+| BLK | Black Bolt | H |
+| WHT | White Flare | H |
+| MEG | Mega Evolution | H |
+| PFL | Phantasmal Flames | H |
+| ASC | Ascended Heroes | H |
+| POR | Perfect Order | H |
 | SVP | Scarlet & Violet Black Star Promos | Varies |
 
 ### Recently Rotated Sets (F mark — Expanded only)
