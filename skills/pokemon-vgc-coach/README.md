@@ -25,4 +25,4 @@
 ## Data Sources
 
 - **Metagame data:** [Pikalytics](https://www.pikalytics.com) (live usage stats, sets, teammate data)
-- **Coaching philosophy:** [WolfeyVGC](https://www.youtube.com/@WolfeyVGC) and [VGCGuide.com](https://www.vgcguide.com)
+- **Coaching philosophy:** Distilled from top players' decision-making patterns; [VGCGuide.com](https://www.vgcguide.com) recommended for fundamentals

@@ -17,6 +17,8 @@
 
 A [Claude Code plugin](https://docs.anthropic.com/en/docs/claude-code/plugins) that turns your AI agent into a Pokemon coach. Install it and start asking questions — whether you're building your first deck, prepping for a tournament, or tracking your card collection.
 
+> **Works beyond Claude Code.** The coaching skills (teambuilding advice, metagame analysis, rules help, deckbuilding guidance) work on any Claude surface — including the **Claude mobile app** and **claude.ai**. Only the MCP-powered tools (card search, collection tracking, damage calculator, PokePaste export) require Claude Code's plugin runtime.
+
 ## Pokemon TCG Coach
 
 Ask about rules, get help building a deck, search for cards, or manage your collection. The coach adapts to your level — from your first theme deck to optimizing a tournament list.
